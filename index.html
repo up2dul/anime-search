@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anime search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/placeholder-loading/dist/css/placeholder-loading.min.css">
+</head>
+
+<body class="bg-light text-dark">
+    <div class="container">
+        <div class="row mt-5 mb-4 justify-content-center text-center">
+            <div class="col col-lg-6 col-md-8 col-sm-10">
+                <h1 class="mb-4 font-weight-light">Anime Search</h1>
+                <form id="search">
+                    <div class="row justify-content-center input-group">
+                        <input id="search-input" type="text" class="col-6 form-control" placeholder="search for an anime..." autocomplete="off" required>
+                        <input id="search-quantity" type="number" class=" col-2 form-control" placeholder="qty.." autocomplete="off" min="1" required>
+                        <div class="input-group-append">
+                            <button class="btn btn-danger" type="submit">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="btn-group btn-group-toggle mx-auto" data-toggle="buttons">
+                <label class="btn btn-sm btn-light active">
+                    <input type="radio" name="options" id="btn-light" checked> Light
+                </label>
+                <label class="btn btn-sm btn-secondary">
+                    <input type="radio" name="options" id="btn-dark"> Dark
+                </label>
+            </div>
+        </div>
+        <hr class="mb-4">
+        <div id="result-list" class="row justify-content-center">
+            <!-- result will be here -->            
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
